@@ -1,4 +1,4 @@
-import { VagasLink, VagasTitulo } from './Vaga.module'
+import { Vagas, VagasLink, VagasTitulo } from './Vaga.module'
 
 export type Props = {
   titulo: string
@@ -19,7 +19,7 @@ const Vaga = ({
   salarioMax,
   requisitos
 }: Props) => (
-  <div>
+  <Vagas>
     <VagasTitulo>{titulo}</VagasTitulo>
     <ul>
       <li>Localizacao: {localizacao}</li>
@@ -31,7 +31,7 @@ const Vaga = ({
       <li>Requisitos: {requisitos.join(', ')}</li>
     </ul>
     <VagasLink href="#">Ver detalhes e candidatar-se</VagasLink>
-  </div>
+  </Vagas>
 )
 
 export default Vaga

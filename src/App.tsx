@@ -9,13 +9,11 @@ import Tema from './theme/tema'
 function App() {
   return (
     <ThemeProvider theme={Tema}>
-      <Header />
       <EstiloGlobal />
+      <Header />
+      <Hero />
       <Container>
-        <Hero />
-        <div className="container">
-          <ListaVagas />
-        </div>
+        <ListaVagas />
       </Container>
     </ThemeProvider>
   )
